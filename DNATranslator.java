@@ -3,11 +3,8 @@ import java.io.*;
 
 public class DNATranslator {
 
-
-
 public static void main(String[] args) {
 	start();
-	
 }
 
 
