@@ -7,7 +7,6 @@ public static void main(String[] args) {
 	start();
 }
 
-
 public static void start() {
 	// starts the program, recurses if the user wants to continue
 	Scanner in = new Scanner(System.in);
@@ -136,7 +135,6 @@ public static String translation(String dna) {
 				// If the program can't find the matching sequence, that means the user must have entered something that doesn't exist.
 			}
 		}
-
 	}
 
 	oof = oof.toLowerCase();
@@ -159,11 +157,9 @@ public static String mRNA(String dna) {
 		} else {
 			mRNA = mRNA + Character.toString(dna.charAt(i));
 		}
-
 	}
 	return mRNA;
 }
-
 
 public static String reverseComplement(String dna) {
 	String revs = "";
@@ -176,16 +172,12 @@ public static String reverseComplement(String dna) {
 		switch(dna.charAt(i)) {
 			case 'A': revs = revs + Character.toString('T');
 			break;
-
 			case 'T': revs = revs + Character.toString('A');
 			break;
-
 			case 'C': revs = revs + Character.toString('G');
 			break;
-
 			case 'G': revs = revs + Character.toString('C');
 			break;
-
 			default:
 			System.out.println("DNA sequences should only contain A,C,G,T.");
 			return "Error";
@@ -196,8 +188,5 @@ public static String reverseComplement(String dna) {
 
 	return revs;
 }
-
-
-
 
 }
