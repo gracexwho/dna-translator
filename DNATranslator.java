@@ -19,7 +19,6 @@ public static void start() {
 	// three options: provide forward translation of DNA sequence entered, reverse translation, or reverse complement
 
 	dna = dna.toUpperCase();
-	if (dna.contains(""))
 
 	switch(command) {
 		case "ftrans":
